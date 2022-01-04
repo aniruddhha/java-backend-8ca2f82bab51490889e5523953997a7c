@@ -1,3 +1,4 @@
+
 public class JavaBasicTests {
 
     public void testVariables() {
