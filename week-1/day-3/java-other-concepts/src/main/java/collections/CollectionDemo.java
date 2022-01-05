@@ -52,6 +52,8 @@ public class CollectionDemo {
         queue.add(null);
         queue.add("pqr");
 
+        // forEach is asking for a parameter
+        // as function who returns void and accepts one string parameter
         queue.forEach(System.out::println); // method reference
 
         return queue;
