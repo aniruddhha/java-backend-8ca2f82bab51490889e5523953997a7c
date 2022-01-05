@@ -1,3 +1,4 @@
+import exception.BadNumberException;
 import exception.NumDivider;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
@@ -19,6 +20,7 @@ public class NumDividerTests {
     @DisplayName("Test for precision point numbers")
     @Test
     void testPrecisionNumbers() {
+        // homework
         var dvDr = new NumDivider();
         var num1 = 4.2;
         var num2 = 2.2;
@@ -45,9 +47,14 @@ public class NumDividerTests {
         var num1 = 4.5;
         var num2 = 0;
 
-        Assertions.assertThrows(RuntimeException.class, () -> {
+        var ex = Assertions.assertThrows(BadNumberException.class, () -> {
             var dvDr = new NumDivider();
             dvDr.divideNumbersException(num1, num2);
         });
+
+        var expected = "num2 is 0";
+        var actual = ex.getMessage();
+
+        Assertions.assertEquals(expected, actual);
     }
 }
