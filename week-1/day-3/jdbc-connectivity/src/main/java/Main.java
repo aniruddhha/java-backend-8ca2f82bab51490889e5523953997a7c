@@ -23,7 +23,9 @@ public class Main {
 //                System.out.println("Employee Created Successfully");
 //            }
 
-            service.find();
+//            service.find();
+
+            service.findEmployeeByName("abc");
 
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
