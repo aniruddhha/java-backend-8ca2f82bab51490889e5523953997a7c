@@ -19,7 +19,6 @@ public class Connectivity {
                 "password"
         );// it loads the driver into memory
 
-
         System.out.println("---- Connected to MySQL Successfully ----");
     }
 

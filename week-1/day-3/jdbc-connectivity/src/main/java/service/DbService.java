@@ -51,15 +51,12 @@ public class DbService {
     }
 
     public void findEmployeeByName(String name) throws SQLException {
+
         String sql = "select * from emp_info where emp_name = ?";
         PreparedStatement ps = connection.prepareStatement(sql);
         ps.setString(1, name);
 
         ResultSet rs = ps.executeQuery();
-        if(!rs.next()) {
-            System.out.println("No Record Found for given name "+name);
-            return;
-        }
         while(rs.next()) {
             int id = rs.getInt("emp_id");
             String nm = rs.getString("emp_name");
@@ -67,6 +64,7 @@ public class DbService {
             boolean isManager = rs.getBoolean("is_manager");
             System.out.println(" id : "+id + " name : " + nm +" dob : "+dob.toString() +" Manager : "+isManager);
         }
+
         rs.close();
     }
 }
