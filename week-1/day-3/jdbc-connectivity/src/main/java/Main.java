@@ -13,15 +13,17 @@ public class Main {
             Connectivity connectivity = new Connectivity();
 
             DbService service = new DbService(connectivity.getConnection());
-            int cnt = service.create(
-                    2,
-                    "pqr",
-                    Date.valueOf(LocalDate.now()),
-                    true
-            );
-            if(cnt > 0) {
-                System.out.println("Employee Created Successfully");
-            }
+//            int cnt = service.create(
+//                    2,
+//                    "pqr",
+//                    Date.valueOf(LocalDate.now()),
+//                    true
+//            );
+//            if(cnt > 0) {
+//                System.out.println("Employee Created Successfully");
+//            }
+
+            service.find();
 
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
