@@ -1,6 +1,6 @@
 package factory;
 
-public /*abstract*/ class CardFactory extends Factory{
+public /*abstract*/ class CardFactory extends Factory {
 
     private CardFactory() { }
 

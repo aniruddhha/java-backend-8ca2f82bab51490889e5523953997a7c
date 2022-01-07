@@ -27,12 +27,18 @@ public class DbService {
 
     // update query
     public int update() {
+        // homework - write a code for updating employee name and dob
         return 0;
     }
 
     // delete query
     public int delete() {
+        // homework - write a code for deleting employee by id
         return 0;
+    }
+
+    public void findEmployeeWithAgeGreaterThanTen() {
+        // homework - find the employee whose age is greater than 10
     }
 
     // select query - reading the data from database
@@ -86,6 +92,31 @@ public class DbService {
         ps2.setInt(1, upId);
         var aff2 = ps2.executeUpdate();
         if(aff2 == 0) connection.rollback();
+
+        connection.commit();
+    }
+
+    public void taxIsolationDemo(int empId, String name, Date dob, boolean isManager) throws SQLException {
+
+        var sql1 = "insert into emp_info values(?, ? , ?, ?)";
+        var ps1 = connection.prepareStatement(sql1);
+        ps1.setInt(1, empId);
+        ps1.setString(2, name);
+        ps1.setDate(3, dob);
+        ps1.setBoolean(4, isManager);
+        var aff1 = ps1.executeUpdate();
+
+        var sql2 = "select * from emp_info";
+        var ps2 = connection.prepareStatement(sql2);
+        var rs = ps2.executeQuery();
+        while(rs.next()) {
+            var id = rs.getInt("emp_id");
+            var nm = rs.getString("emp_name");
+            var db = rs.getDate("dob");
+            var isMan = rs.getBoolean("is_manager");
+
+            System.out.println(" id : "+id + " name : " + nm +" dob : "+db.toString() +" Manager : "+isMan);
+        }
 
         connection.commit();
     }

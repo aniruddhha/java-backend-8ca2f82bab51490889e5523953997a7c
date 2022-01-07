@@ -27,8 +27,9 @@ public class Main {
 
 //            service.findEmployeeByName("abc");
 
-            service.txnDemo(60, "kol", Date.valueOf(LocalDate.now()), true, 100);
+//            service.txnDemo(60, "kol", Date.valueOf(LocalDate.now()), true, 100);
 
+                service.taxIsolationDemo(789, "mjk", Date.valueOf(LocalDate.now()), true);
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         } catch (SQLException e) {

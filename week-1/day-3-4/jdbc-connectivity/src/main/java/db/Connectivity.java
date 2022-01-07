@@ -19,6 +19,7 @@ public class Connectivity {
                 "password"
         );// it loads the driver into memory
         connection.setAutoCommit(false);
+        connection.setTransactionIsolation(Connection.TRANSACTION_REPEATABLE_READ);
         System.out.println("---- Connected to MySQL Successfully ----");
     }
 

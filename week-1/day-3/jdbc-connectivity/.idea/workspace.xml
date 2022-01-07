@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bddcf4fd-4692-4252-98fd-7bd79a097d2f" name="Changes" comment="db connectivity : txn management">
+      <change beforePath="$PROJECT_DIR$/../java-other-concepts/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-other-concepts/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-other-concepts/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-other-concepts/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-other-concepts/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-other-concepts/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-other-concepts/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-other-concepts/src/main/java/collections/CollectionDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-other-concepts/src/main/java/exception/BadNumberException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-other-concepts/src/main/java/exception/NumDivider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-other-concepts/src/main/java/generics/GenericBox.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-other-concepts/src/main/java/generics/NormalBox.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-other-concepts/src/main/java/oop/Animal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-other-concepts/src/main/java/oop/GpsListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-other-concepts/src/main/java/oop/Tiger.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-other-concepts/src/test/java/AnimalTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-other-concepts/src/test/java/GenericsTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-other-concepts/src/test/java/NumDividerTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-other-concepts/target/classes/collections/CollectionDemo$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-other-concepts/target/classes/collections/CollectionDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-other-concepts/target/classes/exception/BadNumberException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-other-concepts/target/classes/exception/NumDivider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-other-concepts/target/classes/generics/GenericBox.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-other-concepts/target/classes/generics/NormalBox.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-other-concepts/target/classes/oop/Animal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-other-concepts/target/classes/oop/GpsListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-other-concepts/target/classes/oop/Tiger.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-other-concepts/target/test-classes/AnimalTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-other-concepts/target/test-classes/GenericsTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-other-concepts/target/test-classes/NumDividerTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/db/Connectivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/DbService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db-schema.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ConnectivityTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/db-schema.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/db/Connectivity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/DbService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ConnectivityTests.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="23HAyz1CkOvek5h8SoaEmGRNM80" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.103286386" />
+    <property name="project.structure.side.proportion" value="0.41894352" />
+    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="jdbc-connectivity" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConnectivityTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jdbc-connectivity" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ConnectivityTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.ConnectivityTests" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bddcf4fd-4692-4252-98fd-7bd79a097d2f" name="Changes" comment="" />
+      <created>1641380898573</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1641380898573</updated>
+    </task>
+    <task id="LOCAL-00001" summary="first three steps for making db connectivity">
+      <created>1641382291266</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1641382291266</updated>
+    </task>
+    <task id="LOCAL-00002" summary="first three steps for making db connectivity : writing jdbc code">
+      <created>1641384657829</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1641384657829</updated>
+    </task>
+    <task id="LOCAL-00003" summary="db connectivity : CRUD operations : create">
+      <created>1641445859844</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1641445859844</updated>
+    </task>
+    <task id="LOCAL-00004" summary="db connectivity : CRUD operations : update">
+      <created>1641449537441</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1641449537442</updated>
+    </task>
+    <task id="LOCAL-00005" summary="db connectivity : CRUD operations : select">
+      <created>1641452229523</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1641452229523</updated>
+    </task>
+    <task id="LOCAL-00006" summary="db connectivity : CRUD operations : select rectified">
+      <created>1641454172242</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1641454172243</updated>
+    </task>
+    <task id="LOCAL-00007" summary="db connectivity : txn management">
+      <created>1641456065709</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1641456065709</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first three steps for making db connectivity" />
+    <MESSAGE value="first three steps for making db connectivity : writing jdbc code" />
+    <MESSAGE value="db connectivity : CRUD operations : create" />
+    <MESSAGE value="db connectivity : CRUD operations : update" />
+    <MESSAGE value="db connectivity : CRUD operations : select" />
+    <MESSAGE value="db connectivity : CRUD operations : select rectified" />
+    <MESSAGE value="db connectivity : txn management" />
+    <option name="LAST_COMMIT_MESSAGE" value="db connectivity : txn management" />
+  </component>
+</project>
