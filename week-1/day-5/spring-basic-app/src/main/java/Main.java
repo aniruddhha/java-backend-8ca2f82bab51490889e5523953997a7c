@@ -8,6 +8,7 @@ public class Main {
 
     public static void main(String[] args) {
 
+        // hey spring - i have written beans configuration in beans.xml
         ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
 
         Car car1 = (Car) context.getBean("car");
