@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
-@ComponentScan("com.ani")
+@ComponentScan("com.ani") // hey spring you will find all beans in side given paackage
 @Configuration
 public class AppConfig {
 
