@@ -4,18 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6e50ab79-ae7c-4557-b661-9342875d8cdc" name="Changes" comment="spring core : annotation based config">
+    <list default="true" id="6e50ab79-ae7c-4557-b661-9342875d8cdc" name="Changes" comment="spring core : component scanning and autowiring">
       <change afterPath="$PROJECT_DIR$/../../../week-1/day-5/spring-web-mvc/WebContent/index.jsp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../../week-1/day-5/spring-web-mvc/src/main/java/com/ani/config/MvcConfig.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../../week-1/day-5/spring-web-mvc/src/main/java/com/ani/controller/FirstController.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../../week-1/day-5/spring-web-mvc/src/main/java/com/ani/web/MvcInitializer.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../../week-1/day-5/spring-web-mvc/src/main/java/com/ani/web/WebAppInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ani/tempo/Tempo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ani/car/Bwm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ani/logging/CarLogger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/ani/car/Bwm.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/ani/logging/CarLogger.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../case-study-week-1/src/main/java/service/DbService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../case-study-week-1/src/main/java/service/DbService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ani/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ani/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ani/car/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ani/car/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ani/driver/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ani/driver/Driver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ani/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ani/config/AppConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/ani/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ani/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ani/car/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ani/car/Car.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ani/config/AppConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ani/config/AppConfig.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +38,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="23UeFDrAz60kG0opS5ngUV3hM77" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -92,7 +107,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641794564674</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="spring core : component scanning and autowiring">
+      <created>1641795873650</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1641795873650</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -108,6 +130,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="spring core : annotation based config" />
-    <option name="LAST_COMMIT_MESSAGE" value="spring core : annotation based config" />
+    <MESSAGE value="spring core : component scanning and autowiring" />
+    <option name="LAST_COMMIT_MESSAGE" value="spring core : component scanning and autowiring" />
   </component>
 </project>
