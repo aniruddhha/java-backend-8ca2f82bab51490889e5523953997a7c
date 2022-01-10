@@ -4,25 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6e50ab79-ae7c-4557-b661-9342875d8cdc" name="Changes" comment="spring core : component scanning and autowiring">
+    <list default="true" id="6e50ab79-ae7c-4557-b661-9342875d8cdc" name="Changes" comment="spring aop : detailed understanding of aspect oriented programming">
       <change afterPath="$PROJECT_DIR$/../../../week-1/day-5/spring-web-mvc/WebContent/index.jsp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../../week-1/day-5/spring-web-mvc/src/main/java/com/ani/config/MvcConfig.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../../week-1/day-5/spring-web-mvc/src/main/java/com/ani/controller/FirstController.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../../week-1/day-5/spring-web-mvc/src/main/java/com/ani/web/MvcInitializer.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../../week-1/day-5/spring-web-mvc/src/main/java/com/ani/web/WebAppInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ani/car/Bwm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ani/logging/CarLogger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/ani/car/Bwm.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/ani/logging/CarLogger.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../case-study-week-1/src/main/java/service/DbService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../case-study-week-1/src/main/java/service/DbService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ani/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ani/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ani/car/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ani/car/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ani/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ani/config/AppConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ani/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ani/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ani/car/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ani/car/Car.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ani/config/AppConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ani/config/AppConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ani/logging/CarLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ani/logging/CarLogger.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +103,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641795873650</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="spring aop : detailed understanding of aspect oriented programming">
+      <created>1641801064185</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1641801064185</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -131,6 +127,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="spring core : annotation based config" />
     <MESSAGE value="spring core : component scanning and autowiring" />
-    <option name="LAST_COMMIT_MESSAGE" value="spring core : component scanning and autowiring" />
+    <MESSAGE value="spring aop : detailed understanding of aspect oriented programming" />
+    <option name="LAST_COMMIT_MESSAGE" value="spring aop : detailed understanding of aspect oriented programming" />
   </component>
 </project>

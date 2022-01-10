@@ -8,6 +8,9 @@ import org.springframework.stereotype.Component;
 @Component
 public class CarLogger {
 
+    //execution(public String com.ani.car.Car.speedUp())
+    //execution(* com.ani.car.*.*(..))
+
     @Before("execution(* com.ani.car.*.*(..))")
     public void logBeforeAnyMethodExecutionCarPackage(JoinPoint jp) {
         System.out.println("Before Execution I am getting printed");
