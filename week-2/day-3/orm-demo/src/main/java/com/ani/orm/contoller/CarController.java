@@ -4,10 +4,9 @@ import com.ani.orm.domain.Car;
 import com.ani.orm.service.CarService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RequestMapping("/car")
 @RestController
@@ -17,8 +16,19 @@ public class CarController {
     private CarService service;
 
     @PostMapping
-    private String saveCar(@RequestBody Car car) {
+    public String saveCar(@RequestBody Car car) {
         service.saveCar(car);
         return "car saved successfully";
+    }
+
+    @DeleteMapping("/{carId}")
+    public String deleteCar(@PathVariable Long carId) {
+        service.deleteCar(carId);
+        return "car deleted successfully";
+    }
+
+    @GetMapping
+    public List<Car> findAllCars() {
+        return service.findAllCars();
     }
 }

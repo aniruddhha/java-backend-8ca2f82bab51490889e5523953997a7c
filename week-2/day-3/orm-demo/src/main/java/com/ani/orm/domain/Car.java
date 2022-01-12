@@ -1,15 +1,14 @@
 package com.ani.orm.domain;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.sql.Date;
 
 @Entity
 public class Car {
 
-    @Column(name = "car_id")
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "car_id")
     private Long carId;
 
     @Column(name = "make", nullable = false)
