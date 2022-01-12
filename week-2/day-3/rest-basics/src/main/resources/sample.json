@@ -1,0 +1,9 @@
+{
+  "speed": 100,
+  "parts": [
+    "abc",
+    "pqr",
+    "lmn"
+  ],
+  "fwd": true
+}
