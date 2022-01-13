@@ -4,6 +4,9 @@ import com.weektwo.casestudy.domain.BankAccount;
 import com.weektwo.casestudy.dto.AppResponse;
 import com.weektwo.casestudy.exception.InvalidAmountException;
 import com.weektwo.casestudy.service.BankService;
+import com.weektwo.casestudy.service.BankServiceImpl;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -15,11 +18,15 @@ import java.util.List;
 @RestController // = @Component
 public class BankController {
 
+    private final Logger logger = LoggerFactory.getLogger(BankController.class);
+
     @Autowired
     private BankService service;
 
     @PostMapping // POST -> http://localhost:8080/bank/
     public ResponseEntity<AppResponse<Integer>> createBankAccount(@RequestBody BankAccount ba) {
+
+        logger.info("creating bank account");
 
         service.createNewAccount(ba);
 

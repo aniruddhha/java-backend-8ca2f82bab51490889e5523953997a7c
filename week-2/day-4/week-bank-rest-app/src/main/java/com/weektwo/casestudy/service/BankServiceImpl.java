@@ -3,6 +3,8 @@ package com.weektwo.casestudy.service;
 import com.weektwo.casestudy.domain.BankAccount;
 import com.weektwo.casestudy.exception.InvalidAmountException;
 import com.weektwo.casestudy.repository.BankRepository;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Isolation;
@@ -19,6 +21,8 @@ import java.util.Optional;
 )
 @Service
 public class BankServiceImpl implements BankService{
+
+    private final Logger logger = LoggerFactory.getLogger(BankServiceImpl.class);
 
     @Autowired
     private BankRepository repository;
@@ -45,6 +49,8 @@ public class BankServiceImpl implements BankService{
 
     @Override
     public double withdraw(Long acNum, double amt) throws InvalidAmountException {
+        logger.info("Withdrawing Money from "+acNum +" with Amount  "+amt);
+        logger.warn("Make sure amount possittive");
         repository.withdraw(amt, acNum);
         return amt;
     }
