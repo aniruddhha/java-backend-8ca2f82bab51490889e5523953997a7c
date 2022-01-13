@@ -2,6 +2,7 @@ package com.weektwo.casestudy.controller;
 
 import com.weektwo.casestudy.domain.BankAccount;
 import com.weektwo.casestudy.dto.AppResponse;
+import com.weektwo.casestudy.exception.InvalidAmountException;
 import com.weektwo.casestudy.service.BankService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -29,14 +30,40 @@ public class BankController {
         return ResponseEntity.ok(response);
     }
 
-    @PutMapping // PUT -> http://localhost:8080/123456
+    @PutMapping("/withdraw") // PUT -> http://localhost:8080/123456
     public ResponseEntity<AppResponse<Double>> withdrawMoney(@RequestBody BankAccount ba) {
-        double amt = service.withdraw(ba.getAcNum(), ba.getBalance());
-        var response = new AppResponse<Double>();
-        response.setMsg("account created successfully");
-        response.setSts("success");
-        response.setBody(amt);
-        return new ResponseEntity<>(response, HttpStatus.ACCEPTED);
+        try {
+            double amt = service.withdraw(ba.getAcNum(), ba.getBalance());
+            var response = new AppResponse<Double>();
+            response.setMsg("money withdrawn successfully");
+            response.setSts("success");
+            response.setBody(amt);
+            return new ResponseEntity<>(response, HttpStatus.OK);
+        }catch (InvalidAmountException e) {
+            var response = new AppResponse<Double>();
+            response.setMsg(e.getMessage());
+            response.setSts("fail");
+            response.setBody(0.0);
+            return new ResponseEntity<>(response, HttpStatus.BAD_REQUEST);
+        }
+    }
+
+    @PutMapping("/deposit") // PUT -> http://localhost:8080/bank/deposit
+    public ResponseEntity<AppResponse<Double>> depositMoney(@RequestBody BankAccount ba) {
+        try {
+            double amt = service.deposit(ba.getAcNum(), ba.getBalance());
+            var response = new AppResponse<Double>();
+            response.setMsg("money deposit successfully");
+            response.setSts("success");
+            response.setBody(amt);
+            return new ResponseEntity<>(response, HttpStatus.ACCEPTED);
+        }catch (InvalidAmountException e) {
+            var response = new AppResponse<Double>();
+            response.setMsg(e.getMessage());
+            response.setSts("fail");
+            response.setBody(0.0);
+            return new ResponseEntity<>(response, HttpStatus.BAD_REQUEST);
+        }
     }
 
     @GetMapping("/{prefix}")
