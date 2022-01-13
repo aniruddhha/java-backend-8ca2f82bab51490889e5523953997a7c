@@ -8,10 +8,15 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Isolation;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.sql.SQLException;
 import java.util.List;
 import java.util.Optional;
 
-@Transactional(isolation = Isolation.READ_UNCOMMITTED)
+@Transactional(
+        isolation = Isolation.READ_UNCOMMITTED,
+        rollbackFor = SQLException.class,
+        noRollbackFor = InvalidAmountException.class
+)
 @Service
 public class BankServiceImpl implements BankService{
 
