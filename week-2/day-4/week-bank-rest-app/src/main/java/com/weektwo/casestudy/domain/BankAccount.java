@@ -8,7 +8,7 @@ public class BankAccount {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long acNum;
+    private Long acNum; // ac_num
     private String acHldNm;
     private Double balance;
     private Boolean status;
