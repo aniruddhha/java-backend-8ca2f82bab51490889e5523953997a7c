@@ -1,16 +1,15 @@
 package com.ani.testing.service;
 
 import com.ani.testing.domain.Car;
+import exception.InvalidIdException;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import org.mockito.Mock;
-import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.boot.test.mock.mockito.MockBean;
 
 import java.sql.Date;
+import java.util.Optional;
 
 @SpringBootTest
 public class CarServiceTests {
@@ -43,5 +42,21 @@ public class CarServiceTests {
 
         Car resCar = service.saveCar(car);
         Assertions.assertEquals(car, resCar);
+    }
+
+    @DisplayName("Service : Car by id : valid")
+    @Test
+    public void testCarByIdValid() {
+        Optional<Car> op = service.findCarById(10L);
+        Assertions.assertNotNull(op.get());
+    }
+
+    @DisplayName("Service : Car by id : invalid")
+    @Test
+    public void testCarByIdInValid() {
+        Assertions.assertThrows(
+                InvalidIdException.class,
+                () -> service.findCarById(-10L)
+        );
     }
 }
