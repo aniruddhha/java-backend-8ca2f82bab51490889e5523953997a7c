@@ -8,6 +8,7 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Mockito;
+import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 import java.sql.Date;
@@ -20,8 +21,13 @@ public class AppServiceTests {
     @Mock
     private AppRepository repository;
 
+//    @MockBean -> they will create dependency tree
+//    @Mock ->  they will create dependency tree
     @InjectMocks
     private AppService service;
+    // service class is calling method inside repository ?
+    // how to check this method has happened or not ?
+    // for that you have verify methods from Mockito.s
 
     @Test
     public void testDateBetween() {
@@ -52,6 +58,8 @@ public class AppServiceTests {
         var apps = service.finAppsBetween(st, ed); // you called the function 1 time
         Assertions.assertEquals(apps.size(), 2);
 
+        // I want to make sure, actually repository method has called
+        // so that I am verifying it
         Mockito.verify(
                 repository,
                 Mockito.times(1) // function should be called 1 times
