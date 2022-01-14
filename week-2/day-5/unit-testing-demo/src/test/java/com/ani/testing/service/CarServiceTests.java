@@ -11,7 +11,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import java.sql.Date;
 import java.util.Optional;
 
-@SpringBootTest
+@SpringBootTest // you have done test on actual data
 public class CarServiceTests {
 
     @Autowired
