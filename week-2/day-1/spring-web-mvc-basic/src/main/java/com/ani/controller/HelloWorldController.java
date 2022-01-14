@@ -7,9 +7,13 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
 public class HelloWorldController {
-
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String hi() {
         return "index";
+    }
+
+    @RequestMapping(value = "/dt", method = RequestMethod.GET)
+    public String data() {
+        return "data";
     }
 }

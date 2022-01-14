@@ -1,6 +1,5 @@
 package com.ani.config;
 
-import com.ani.car.Car;
 import com.ani.driver.Driver;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;

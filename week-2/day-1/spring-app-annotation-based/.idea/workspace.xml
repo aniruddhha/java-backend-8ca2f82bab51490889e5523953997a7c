@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6e50ab79-ae7c-4557-b661-9342875d8cdc" name="Changes" comment="spring aop : before advice">
+    <list default="true" id="6e50ab79-ae7c-4557-b661-9342875d8cdc" name="Changes" comment="spring aop : point cuts">
       <change afterPath="$PROJECT_DIR$/../../../week-1/day-5/spring-web-mvc/WebContent/index.jsp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../../week-1/day-5/spring-web-mvc/src/main/java/com/ani/config/MvcConfig.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../../week-1/day-5/spring-web-mvc/src/main/java/com/ani/controller/FirstController.java" afterDir="false" />
@@ -12,8 +12,7 @@
       <change afterPath="$PROJECT_DIR$/../../../week-1/day-5/spring-web-mvc/src/main/java/com/ani/web/WebAppInitializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../case-study-week-1/src/main/java/service/DbService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../case-study-week-1/src/main/java/service/DbService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ani/logging/CarLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ani/logging/CarLogger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ani/logging/CarLogger.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ani/logging/CarLogger.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ani/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ani/config/AppConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641801457337</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="spring aop : point cuts">
+      <created>1641806465711</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1641806465711</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -138,6 +144,7 @@
     <MESSAGE value="spring core : component scanning and autowiring" />
     <MESSAGE value="spring aop : detailed understanding of aspect oriented programming" />
     <MESSAGE value="spring aop : before advice" />
-    <option name="LAST_COMMIT_MESSAGE" value="spring aop : before advice" />
+    <MESSAGE value="spring aop : point cuts" />
+    <option name="LAST_COMMIT_MESSAGE" value="spring aop : point cuts" />
   </component>
 </project>

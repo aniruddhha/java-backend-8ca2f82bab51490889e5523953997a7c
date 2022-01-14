@@ -17,12 +17,15 @@ public class CalcController {
     // hey spring get me the resource whose url belongs to /
     @GetMapping("/") // http method get
     public String home(Model model) {
-        model.addAttribute("postData", new PostData());
+        model.addAttribute(
+                "postData",
+                new PostData()
+        );
         return "home";
     }
 
     @PostMapping("/add")
-    public String add(@ModelAttribute PostData postData, BindingResult err, Model model) {
+    public String add(@ModelAttribute PostData postData, Model model) {
         model.addAttribute("result", postData);
         return "result";
     }

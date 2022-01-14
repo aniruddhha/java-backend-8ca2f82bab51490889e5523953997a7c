@@ -29,4 +29,10 @@ public class DbService {
     public void printAllAccounts() {
 
     }
+
+    public void transferAmount(int srcAct, int destAct, double amt) {
+        // deduct amount from src -> update
+        // add amount to dest -> update
+        // commit
+    }
 }

@@ -20,7 +20,7 @@ public class AppController {
     private AppService service;
 
     @GetMapping("/{st}/{ed}")
-    ResponseEntity<List<App>> findApps(@PathVariable String st, @PathVariable  String ed) {
+    public ResponseEntity<List<App>> findApps(@PathVariable String st, @PathVariable  String ed) {
         return ResponseEntity.ok(
                 service.finAppsBetween(
                         Date.valueOf(st),

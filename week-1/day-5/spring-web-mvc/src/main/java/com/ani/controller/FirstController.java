@@ -2,15 +2,19 @@ package com.ani.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.ModelAndView;
 
 @Controller
-@RequestMapping("/")
+@RequestMapping("/my")
 public class FirstController {
 
-    @RequestMapping(value = "/", method = RequestMethod.GET)
-    public String sayHi(Model model) {
-        return "index";
+    @GetMapping
+    public ModelAndView data(Model model) {
+        var mv = new ModelAndView();
+        mv.setViewName("my");
+        return mv;
     }
 }
