@@ -11,6 +11,7 @@ import org.springframework.boot.test.web.client.TestRestTemplate;
 import org.springframework.boot.web.server.LocalServerPort;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
 
 import java.sql.Date;
 import java.time.LocalDate;
@@ -36,6 +37,15 @@ public class CarControllerTests {
         );
 
         Assertions.assertNotNull(car);
+    }
+
+    @DisplayName("GET - Car - Checking object content")
+    @Test
+    public void testObjectContent() {
+        String url = "http://" + "localhost" +":" + port +"/car";
+        var re = template.getForEntity(url, Car.class);
+        var car = re.getBody();
+        Assertions.assertEquals(car.getId(), 10 );
     }
 
     @DisplayName("GET - Car - Checking Status Code")
