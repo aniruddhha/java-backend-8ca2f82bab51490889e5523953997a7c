@@ -26,6 +26,6 @@
 - create required commands 
 - `docker tag 'local-image:tagname' 'new-repo:tagname'`
 - `docker push 'new-repo':'tagname'`
-- > docker tag spring-boot-app:0.0.1 aniruddhakudalkar/spring-boot-app:0.0.1
-- > docker push aniruddhakudalkar/spring-boot-app:0.0.1
+> docker tag spring-boot-app:0.0.1 aniruddhakudalkar/spring-boot-app:0.0.1
+> docker push aniruddhakudalkar/spring-boot-app:0.0.1
 
