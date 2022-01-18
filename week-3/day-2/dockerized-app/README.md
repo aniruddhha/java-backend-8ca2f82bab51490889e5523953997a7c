@@ -11,7 +11,7 @@
 ### Build Process
 - First Add Dockerfile in root of your project
 
-- `docker build -t 'any relevant tag name':'version'` 'path to Dockerfile'
+- `docker build -t 'any relevant tag name':'version' 'path to Dockerfile'`
   - > e.g. docker build -t spring-boot-app:0.0.1 .
 
 - after building check docker image is generated
