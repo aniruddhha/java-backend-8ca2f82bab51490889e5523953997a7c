@@ -28,7 +28,7 @@
 
 - Create you account on docker hub
 - in the command prompt login to your account
-- `docker login`
+- `docker login --username='your user name'`
 
 - create repository on docker hub (from browser ui)
 - create required commands 
