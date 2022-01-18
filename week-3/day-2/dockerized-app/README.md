@@ -8,7 +8,7 @@
 
 - after building check docker image is generated
 - `docker images`
-> If you see image with your given tag image is generated.
+- If you see image with your given tag image is generated.
 
 - running local(that you generated recently) docker image in a container
 - `docker run -d -p 'host port number':'container port number' 'image name':'version'`
