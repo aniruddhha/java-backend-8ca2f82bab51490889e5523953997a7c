@@ -1,6 +1,6 @@
 ### Case Study Implementation Guidelines
-> As per the client requirement, we are developing Very Basic SaaS based Hospital Management System. At the beginning, we need to work 3 modules only i.e. Patient, Doctor and Appointment. 
-> We need to develop these apps in such a way that, it would be getting converted to Microservices in the future. Each module will be considered as one Microservice in the future.
+> As per the client requirement, we are developing Very Basic SaaS based Hospital Management System. At the beginning, we need to work on 3 modules only i.e. Patient, Doctor and Appointment. 
+> We need to develop these apps in such a way that, it would be getting converted to Microservices in the future.
 
 - There would be 4 groups, each group will have 4 members
 - Every group has to select one case study from below
