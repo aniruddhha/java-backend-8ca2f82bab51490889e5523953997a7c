@@ -15,6 +15,19 @@
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>11</java.version>
+
+		<!-- test result measurements -->
+		<project.test.result.directory>${project.build.directory}/test-results</project.test.result.directory>
+		<sonar.host.url>http://localhost:9000</sonar.host.url>
+		<sonar.scm.provider>git</sonar.scm.provider>
+		<sonar.java.codeCoveragePlugin>jacoco</sonar.java.codeCoveragePlugin>
+		<sonar.coverage.jacoco.xmlReportPaths>${project.test.result.directory}/jacoco/jacoco.xml</sonar.coverage.jacoco.xmlReportPaths>
+		<sonar.exclusions>
+			**/*.xml
+		</sonar.exclusions>
+		<sonar.coverage.exclusions>
+			**/qualitymeasurementsample/*
+		</sonar.coverage.exclusions>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -31,9 +44,55 @@
 
 	<build>
 		<plugins>
+
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+
+			<plugin>
+				<groupId>org.sonarsource.scanner.maven</groupId>
+				<artifactId>sonar-maven-plugin</artifactId>
+				<version>3.7.0.1746</version>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.0.0-M5</version>
+				<configuration>
+					<argLine>${jacocoArgLine}</argLine>
+					<reportsDirectory>${project.test.result.directory}/surefire</reportsDirectory>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.jacoco</groupId>
+				<artifactId>jacoco-maven-plugin</artifactId>
+				<version>0.8.5</version>
+				<executions>
+					<execution>
+						<id>pre-test</id>
+						<goals>
+							<goal>prepare-agent</goal>
+						</goals>
+						<configuration>
+							<propertyName>jacocoArgLine</propertyName>
+							<destFile>${project.test.result.directory}/jacoco/jacoco.exec</destFile>
+						</configuration>
+					</execution>
+					<execution>
+						<id>post-test</id>
+						<phase>test</phase>
+						<goals>
+							<goal>report</goal>
+						</goals>
+						<configuration>
+							<dataFile>${project.test.result.directory}/jacoco/jacoco.exec</dataFile>
+							<outputDirectory>${project.test.result.directory}/jacoco</outputDirectory>
+						</configuration>
+					</execution>
+				</executions>
 			</plugin>
 		</plugins>
 	</build>
