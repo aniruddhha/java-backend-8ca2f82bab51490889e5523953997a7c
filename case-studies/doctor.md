@@ -8,6 +8,8 @@
 - USDOC5 : As a user, I would like to search doctor by specialization
 - USDOC6 : As a user, I would like to search doctor by hospital locality
 - USDOC7 : As a user, I would like to find visiting doctors for given specialization
+- USDOC8 : As a user, I would like to find count of doctors in given locality with given specialization
+- USDOC9 : As a user, I would like to find permanent doctors for given specialization 
 
 #### Database Entities
 - Doctor 
