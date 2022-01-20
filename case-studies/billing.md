@@ -1,21 +1,25 @@
 ## Billing Module
 
 #### User Stories
-- As a user, I would like to create new bill 
-- As a user, I would like to update bill
-- As a user, I would like to mark bill as paid
-- As a user, I would like to see list of all bills
-- As a user, I would like to search bills by patient name
-- As a user, I would like to search paid bills by given dates 
+- USBIL01 : As a user, I would like to create new bill 
+- USBIL02 : As a user, I would like to update bill
+- USBIL03 : As a user, I would like to mark bill as paid
+- USBIL04 : As a user, I would like to see list of all bills
+- USBIL05 : As a user, I would like to search bills by patient name
+- USBIL06 : As a user, I would like to search paid bills by given dates 
+- USBIL07 : As a user, I would like to search unpaid bills for given treatment
+- USBIL08 : As a user, I would like to search the bills with given amount is more than 15000
+- USBIL09 : As a user, I would like to see treatment wise bill amount
 
 #### Database Entities
 - Bill
     - id : primary key number
-    - patientName : non null string
-    - billDate : non null date
+    - patient name : non null string
+    - bill date : non null date
     - treatment : can be null string
-    - paidDate : not null date
-    - billStatus : not null boolean (paid, due)
+    - paid date : not null date
+    - bill status : not null boolean (paid, due)
+    - bill amount : not null number
 
 #### Hints
 - Use JPA Repository - 10 Marks

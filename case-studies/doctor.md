@@ -1,12 +1,13 @@
 ## Doctor Module
 
 #### User Stories
-- As a user, I would like to have doctor registration
-- As a user, I would like to update doctor information
-- As a user, I would like to delete doctor
-- As a user, I would like to see list of registered doctors
-- As a user, I would like to search doctor by specialization
-- As a user, I would like to search doctor by hospital locality
+- USDOC1 : As a user, I would like to have doctor registration
+- USDOC2 : As a user, I would like to update doctor information
+- USDOC3 : As a user, I would like to delete doctor
+- USDOC4 : As a user, I would like to see list of registered doctors
+- USDOC5 : As a user, I would like to search doctor by specialization
+- USDOC6 : As a user, I would like to search doctor by hospital locality
+- USDOC7 : As a user, I would like to find visiting doctors for given specialization
 
 #### Database Entities
 - Doctor 
@@ -15,6 +16,7 @@
   - specialization : non null string  
   - hospital name : can be null string
   - hospital locality : can be null string
+  - visiting : non null boolean
 
 #### Hints
 - Use JPA Repository - 10 Marks
