@@ -16,7 +16,7 @@
   - id : primary key number
   - name : non null string 
   - mobile: can be null string
-  - dob : non null date
+  - age : non null number
   - status : non null boolean
   - last visited : can be null date
 
