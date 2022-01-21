@@ -21,7 +21,7 @@ public class AbcTests {
     void testObjectGettersSetters() {
         var abc = new Abc();
         abc.setNum(10);
-        abc.setDt(Date.valueOf(LocalDate.of(2021,1,1)));
+        abc.setDt(LocalDate.of(2021,1,1));
         abc.setName("abc");
         abc.setId(10L);
 

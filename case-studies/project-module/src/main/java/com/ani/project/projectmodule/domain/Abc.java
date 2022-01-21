@@ -4,6 +4,7 @@ import lombok.Data;
 
 import javax.persistence.*;
 import java.sql.Date;
+import java.time.LocalDate;
 
 @Data
 @Entity
@@ -17,7 +18,7 @@ public class Abc {
     private String name;
 
     @Column(unique = false, nullable = true)
-    private Date dt;
+    private LocalDate dt;
 
     @Column(unique = false, nullable = false)
     private Integer num;

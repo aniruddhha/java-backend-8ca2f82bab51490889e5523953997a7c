@@ -28,7 +28,7 @@ public class AbcRepositoryTests {
         abc.setId(565L);
         abc.setName("abc");
         abc.setNum(56);
-        abc.setDt(Date.valueOf(LocalDate.now()));
+        abc.setDt(LocalDate.now());
 
         repository.save(abc);
     }
