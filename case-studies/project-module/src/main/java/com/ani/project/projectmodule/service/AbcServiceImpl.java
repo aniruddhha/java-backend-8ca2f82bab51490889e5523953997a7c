@@ -6,6 +6,8 @@ import com.ani.project.projectmodule.repository.AbcRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDate;
+import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -56,6 +58,14 @@ public class AbcServiceImpl implements AbcService{
 
     @Override
     public List<AbcDto> findAbcByLocalityAndDoctor(String loc, String doc) {
+        return null;
+    }
+
+    @Override
+    public List<AbcDto> findTenDaysBack() {
+
+        LocalDate dt = LocalDate.now();
+        LocalDate backDate = dt.minusDays(10);
         return null;
     }
 }

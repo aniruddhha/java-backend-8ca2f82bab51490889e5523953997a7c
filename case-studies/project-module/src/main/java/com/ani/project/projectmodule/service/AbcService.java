@@ -11,4 +11,6 @@ public interface AbcService {
     public List<AbcDto> findAll();
 
     List<AbcDto> findAbcByLocalityAndDoctor(String loc, String doc);
+
+    List<AbcDto> findTenDaysBack();
 }

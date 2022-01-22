@@ -27,7 +27,7 @@ public class AbcTests {
 
         Assertions.assertEquals(10, abc.getNum());
         Assertions.assertEquals(
-                Date.valueOf(LocalDate.of(2021,1,1)),
+                LocalDate.of(2021,1,1),
                 abc.getDt()
         );
         Assertions.assertEquals("abc", abc.getName());
