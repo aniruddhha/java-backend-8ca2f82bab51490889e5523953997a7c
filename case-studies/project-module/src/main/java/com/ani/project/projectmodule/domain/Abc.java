@@ -1,12 +1,16 @@
 package com.ani.project.projectmodule.domain;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import java.time.LocalDate;
 
+@NoArgsConstructor
+@AllArgsConstructor
 @Data
 @Entity
 public class Abc {
